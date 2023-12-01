@@ -1,21 +1,43 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
+import s from "./style.module.sass";
 
 const Header = () => {
   return (
-    <div>
-      <div>
-        <img src={Logo} alt="" />
-      </div>
-      <div>
-        <ul>
-          <li>Sobre</li>
-          <li>Projetos</li>
-          <li>Serviços</li>
-          <li>Skills</li>
+    <header className={s.header}>
+      <figure>
+        <img src={Logo} alt="logo marca" className={s.logo} />
+      </figure>
+      <nav>
+        <ul className={s.ul}>
+          <li>
+            <a href="#" className={s.li}>
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a href="#" className={s.li}>
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a href="#" className={s.li}>
+              Projetos
+            </a>
+          </li>
+          <li>
+            <a href="#" className={s.li}>
+              Serviços
+            </a>
+          </li>
+          <li>
+            <a href="#" className={s.li}>
+              Skills
+            </a>
+          </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

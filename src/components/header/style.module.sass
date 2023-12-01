@@ -1,0 +1,43 @@
+.header
+    padding: 1rem 7vw
+    display: flex
+    justify-content: space-between
+
+.ul
+    display: flex
+    align-items: center
+    gap: 2rem
+    height: 100%
+    list-style: none
+
+.li
+    color: #f9f9f9
+    font-size: 1.125rem
+    font-weight: 400
+    line-height: normal
+    text-decoration: none
+    cursor: pointer
+    position: relative
+
+.li:hover
+    color: #2ce7a3
+    transition: 0.3s
+    
+
+.li:after
+    content: ""
+    position: absolute
+    background-color: #1DB57E
+    height: 3px
+    width: 0%
+    left: 0
+    bottom: -5px
+    transition: 0.3s
+
+.li:hover:after
+    width: 100%
+
+
+.logo
+    width: 7.5rem
+    height: 5.88rem
