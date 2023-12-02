@@ -1,0 +1,31 @@
+@use 'variables'
+
+@mixin btn
+    width: 8.9375rem
+    height: 2.625rem
+    background: variables.$text-color-secondary
+    border-radius: 0.3125rem
+    padding: 0rem 0rem 0rem 0rem
+    border: none
+
+@mixin btn2
+    width: 8.9375rem
+    height: 2.625rem
+    background: variables.$bg-color
+    border-radius: 0.3125rem
+    padding: 0rem 0rem 0rem 0rem
+    border: 1px solid #333
+
+@mixin circleBg
+    width: 62px
+    height: 62px
+    background: #212121
+    border-radius: 100%
+    padding: 1rem
+
+@mixin circleGradient
+    padding: 2.4px
+    width: 67px
+    height: 67px
+    border-radius: 100%
+    background: linear-gradient(180deg, rgba(29,181,126,1) 0%, rgba(85,26,210,1) 100%)

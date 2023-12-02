@@ -1,7 +1,11 @@
+@use '../../styles/variables'
+
 .header
-    padding: 1rem 7vw
+    height: 10rem
+    padding: 0rem 7vw
     display: flex
     justify-content: space-between
+    align-items: center
 
 .ul
     display: flex
@@ -11,7 +15,7 @@
     list-style: none
 
 .li
-    color: #f9f9f9
+    color: variables.$text-color
     font-size: 1.125rem
     font-weight: 400
     line-height: normal
@@ -20,14 +24,14 @@
     position: relative
 
 .li:hover
-    color: #2ce7a3
+    color: variables.$text-color-secondary
     transition: 0.3s
     
 
 .li:after
     content: ""
     position: absolute
-    background-color: #1DB57E
+    background-color: variables.$text-color-secondary
     height: 3px
     width: 0%
     left: 0

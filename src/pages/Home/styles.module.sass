@@ -1,0 +1,124 @@
+@use '../../styles/variables'
+@use '../../styles/mixin'
+
+.firstSection
+    display: flex
+    align-items: center
+
+.firstDiv
+    display: flex
+    width: 46rem
+    height: 35rem
+    align-items: center
+    position: relative
+    z-index: -1
+
+    img
+        position: absolute
+        z-index: 0
+        width: 80rem
+        bottom: -245px
+
+.allignContent
+    border: solid 3px solid
+    width: 50rem
+    display: flex
+    align-items: center
+    gap: 2rem
+
+.title
+    width: 17.5rem
+    font-size: 2.25rem
+    font-weight: 500
+    letter-spacing: 0.2925rem
+    color: variables.$text-color
+
+.strong
+    background: linear-gradient(177deg, #1DB57E -13.8%, #860DFF 98.65%)
+    background-clip: text
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+
+.subtitle
+    font-size: 1.125rem
+    font-weight: 500
+    color: variables.$text-color-thirdy
+
+.contactDownload
+    height: 15rem
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+
+.spline
+    padding-top: 20px
+
+.btn
+    margin-right: 0.94rem
+    font-size: 0.875rem
+    font-weight: 500
+    color: variables.$bg-color
+    cursor: pointer
+    transition: 0.5s ease-in-out
+    @include mixin.btn
+
+.btn:hover
+    background-color: #24e49d
+    transition: 0.5s ease-in-out
+
+.contact
+    font-size: 0.875rem
+    font-weight: 500
+    color: variables.$text-color
+    cursor: pointer
+    transition: 0.5s ease-in-out
+    @include mixin.btn2
+
+.contact:hover
+    background-color: #333
+    transition: 0.5s ease-in-out
+
+.secondSection
+    display: flex
+    justify-content: center
+    align-items: center
+
+.cardMain
+    background: url("/cardFundo.png")
+    width: 100%
+    height: 57.375rem
+    background-repeat: no-repeat
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+
+.containDescription
+    width: 71.25rem
+    height: 34.375rem
+    padding: 2.88rem
+
+    h2
+        color: variables.$text-color
+        font-size: 2rem
+        font-weight: 700
+        display: flex
+        padding: 0rem 0rem 0rem 14.56rem
+
+    p
+        display: flex
+        width: 36.5rem
+        font-size: 1.125rem
+        line-height: 2rem
+        font-weight: 400
+        color: #c3c3c3
+        gap: 1.6rem
+        margin-top: 1.81rem
+
+.circleGradient
+    @include mixin.circleGradient
+
+
+.circle
+    @include mixin.circleBg
+    
