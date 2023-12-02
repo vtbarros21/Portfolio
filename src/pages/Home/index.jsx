@@ -6,6 +6,10 @@ import Line from "../../assets/line1.png";
 import Avatar from "../../assets/Avatar.png";
 import Line2 from "../../assets/line2.png";
 import Mail from "../../assets/mail.svg";
+import Instagram from "../../assets/instagram.svg";
+import Phone from "../../assets/phone.svg";
+import Github from "../../assets/github.svg";
+import Linkedin from "../../assets/linkedin.svg";
 
 const Home = () => {
   return (
@@ -52,47 +56,52 @@ const Home = () => {
                 atuais, estou imerso no estudo de outras linguagens relacionadas
                 ao Front-End, buscando sempre evoluir.
               </p>
-              <div className={s.circleGradient}>
-                <a href="#">
-                  <div className={s.circle}>
-                    <img src={Mail} alt="email" />
-                  </div>
-                </a>
-              </div>
-              <div className={s.circleGradient}>
-                <a href="#">
-                  <div className={s.circle}>
-                    <img src={Mail} alt="email" />
-                  </div>
-                </a>
-              </div>
-              <div className={s.circleGradient}>
-                <a href="#">
-                  <div className={s.circle}>
-                    <img src={Mail} alt="email" />
-                  </div>
-                </a>
-              </div>
-              <div className={s.circleGradient}>
-                <a href="#">
-                  <div className={s.circle}>
-                    <img src={Mail} alt="email" />
-                  </div>
-                </a>
-              </div>
-              <div className={s.circleGradient}>
-                <a href="#">
-                  <div className={s.circle}>
-                    <img src={Mail} alt="email" />
-                  </div>
-                </a>
+              <div className={s.alignCircle}>
+                <div className={s.circleGradient}>
+                  <a href="#">
+                    <div className={s.circle}>
+                      <img src={Mail} alt="email" />
+                    </div>
+                  </a>
+                </div>
+                <div className={s.circleGradient}>
+                  <a href="#">
+                    <div className={s.circle}>
+                      <img src={Instagram} alt="instagram" />
+                    </div>
+                  </a>
+                </div>
+                <div className={s.circleGradient}>
+                  <a href="#">
+                    <div className={s.circle}>
+                      <img src={Phone} alt="telefone" />
+                    </div>
+                  </a>
+                </div>
+                <div className={s.circleGradient}>
+                  <a href="#">
+                    <div className={s.circle}>
+                      <img src={Github} alt="Github" />
+                    </div>
+                  </a>
+                </div>
+                <div className={s.circleGradient}>
+                  <a href="#">
+                    <div className={s.circle}>
+                      <img src={Linkedin} alt="email" />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
           <figure>
-            <img src={Avatar} alt="Avatar" />
+            <img src={Avatar} alt="Avatar" className={s.personagem}/>
           </figure>
         </figure>
+      </section>
+      <section>
+        <h2>Projetos</h2>
       </section>
     </>
   );
