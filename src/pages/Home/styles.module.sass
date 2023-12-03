@@ -25,6 +25,7 @@
     display: flex
     align-items: center
     gap: 2rem
+    
 
 .title
     width: 17.5rem
@@ -49,6 +50,7 @@
     display: flex
     flex-direction: column
     justify-content: space-around
+    
 
 .spline
     padding-top: 20px
@@ -242,3 +244,36 @@
         color: variables.$text-color
         font-weight: 700
         font-size: 2rem
+
+.fifithSection
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-top: 9.12rem
+    h2
+        color: variables.$text-color
+        font-weight: 700
+        font-size: 2rem
+
+.backgroundgradientIcon
+    @include mixin.backgroundGradient
+    background: linear-gradient(360deg, rgba(85,26,210,0.2) 40%, rgba(29,181,126,1) 100%)
+    width: 9.625rem
+    height: 9.585rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+.backgroundIcons
+    @include mixin.backgroundBlack
+    width: 9.375rem
+    height: 9.375rem
+    display: flex
+    justify-content: center
+    align-items: center
+
+.alignSkills
+    display: flex
+    gap: 4.06rem
+    padding-bottom: 6.56rem

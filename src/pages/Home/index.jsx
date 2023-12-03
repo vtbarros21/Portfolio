@@ -13,6 +13,12 @@ import Linkedin from "../../assets/linkedin.svg";
 import Code from "../../assets/code.svg";
 import Figma from "../../assets/figma.svg";
 import Smartphone from "../../assets/smartphone.svg";
+import Next from "../../assets/next.png";
+import Bootstrap from "../../assets/bootstrap.png";
+import Javascript from "../../assets/javascript.svg";
+import Nail from "../../assets/styledcomponents.png"
+import Reacao from "../../assets/react.svg";
+import Sass from "../../assets/sass.png";
 
 const Home = () => {
   return (
@@ -185,6 +191,67 @@ const Home = () => {
                   <img src={Smartphone} alt="Code" />
                   <h3>Sites responsivos</h3>
                 </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div className={s.fifithSection}>
+          <h2>Skills</h2>
+          <div className={s.alignSkills}>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Next} alt="next" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Bootstrap} alt="Bootstrap" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Javascript} alt="Javascript" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Nail} alt="Styled-Components" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Reacao} alt="React" />
+                  </figure>
+                </div>
+              </div>
+            </div>
+            <div className={s.alignCard}>
+              <div className={s.backgroundgradientIcon}>
+                <div className={s.backgroundIcons}>
+                  <figure>
+                    <img src={Sass} alt="Sass" />
+                  </figure>
+                </div>
               </div>
             </div>
           </div>
