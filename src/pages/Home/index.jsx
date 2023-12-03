@@ -30,12 +30,16 @@ const Home = () => {
             </h1>
             <p className={s.subtitle}>Desenvolvedor Front-End & UI Designer</p>
             <div>
-              <input type="button" value="Downlod CV" className={s.btn} />
-              <input
-                type="button"
-                value="Entrar em contato"
-                className={s.contact}
-              />
+              <a href="/Victor.pdf" download={true} target="_blank">
+                <input type="button" value="Downlod CV" className={s.btn} />
+              </a>
+              <a href="https://w.app/7w502B" target="_blank">
+                <input
+                  type="button"
+                  value="Entrar em contato"
+                  className={s.contact}
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -58,35 +62,35 @@ const Home = () => {
               </p>
               <div className={s.alignCircle}>
                 <div className={s.circleGradient}>
-                  <a href="#">
+                  <a href="mailto:victorhugo21.contato@gmail.com" target="_blank">
                     <div className={s.circle}>
                       <img src={Mail} alt="email" />
                     </div>
                   </a>
                 </div>
                 <div className={s.circleGradient}>
-                  <a href="#">
+                  <a href="https://www.instagram.com/ofc_vete/" target="_blank">
                     <div className={s.circle}>
                       <img src={Instagram} alt="instagram" />
                     </div>
                   </a>
                 </div>
                 <div className={s.circleGradient}>
-                  <a href="#">
+                  <a href="https://w.app/7w502B" target="_blank">
                     <div className={s.circle}>
                       <img src={Phone} alt="telefone" />
                     </div>
                   </a>
                 </div>
                 <div className={s.circleGradient}>
-                  <a href="#">
+                  <a href="https://github.com/vtbarros21" target="_blank">
                     <div className={s.circle}>
                       <img src={Github} alt="Github" />
                     </div>
                   </a>
                 </div>
                 <div className={s.circleGradient}>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/victor-martiliano/" target="_blank">
                     <div className={s.circle}>
                       <img src={Linkedin} alt="email" />
                     </div>
