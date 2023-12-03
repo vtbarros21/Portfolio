@@ -10,6 +10,9 @@ import Instagram from "../../assets/instagram.svg";
 import Phone from "../../assets/phone.svg";
 import Github from "../../assets/github.svg";
 import Linkedin from "../../assets/linkedin.svg";
+import Code from "../../assets/code.svg";
+import Figma from "../../assets/figma.svg";
+import Smartphone from "../../assets/smartphone.svg";
 
 const Home = () => {
   return (
@@ -62,7 +65,10 @@ const Home = () => {
               </p>
               <div className={s.alignCircle}>
                 <div className={s.circleGradient}>
-                  <a href="mailto:victorhugo21.contato@gmail.com" target="_blank">
+                  <a
+                    href="mailto:victorhugo21.contato@gmail.com"
+                    target="_blank"
+                  >
                     <div className={s.circle}>
                       <img src={Mail} alt="email" />
                     </div>
@@ -90,7 +96,10 @@ const Home = () => {
                   </a>
                 </div>
                 <div className={s.circleGradient}>
-                  <a href="https://www.linkedin.com/in/victor-martiliano/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/in/victor-martiliano/"
+                    target="_blank"
+                  >
                     <div className={s.circle}>
                       <img src={Linkedin} alt="email" />
                     </div>
@@ -151,10 +160,33 @@ const Home = () => {
         </div>
       </section>
       <section>
-        <div>
+        <div className={s.quarterSection}>
           <h2>Serviços</h2>
-          <div>
-            
+          <div className={s.alignCard}>
+            <div className={s.gradientCard}>
+              <div className={s.blackCard}>
+                <figure>
+                  <img src={Code} alt="Code" />
+                  <h3>Criação de sites</h3>
+                </figure>
+              </div>
+            </div>
+            <div className={s.gradientCard}>
+              <div className={s.blackCard}>
+                <figure>
+                  <img src={Figma} alt="Code" />
+                  <h3>UI/UX Designer</h3>
+                </figure>
+              </div>
+            </div>
+            <div className={s.gradientCard}>
+              <div className={s.blackCard}>
+                <figure>
+                  <img src={Smartphone} alt="Code" />
+                  <h3>Sites responsivos</h3>
+                </figure>
+              </div>
+            </div>
           </div>
         </div>
       </section>

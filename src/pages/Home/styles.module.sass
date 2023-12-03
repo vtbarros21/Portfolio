@@ -209,3 +209,36 @@
     display: flex
     justify-content: end
     padding-right: 9.44rem
+
+.gradientCard
+    @include mixin.backgroundGradient
+    width: 25.2rem
+    height: 17rem
+    border-radius: 0.625rem 0.625rem 0rem 0rem
+    display: flex
+    justify-content: center
+
+.blackCard
+    @include mixin.backgroundBlack
+    width: 24.875rem
+    height: 16.6rem
+    display: flex
+    align-items: center
+    padding-left: 1.88rem
+    h3
+        color: #828282
+        font-size: 2rem
+        font-weight: 500
+        padding-top: 2.5rem
+        width: 8.187rem
+
+.quarterSection
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-top: 7.12rem
+    h2
+        color: variables.$text-color
+        font-weight: 700
+        font-size: 2rem
