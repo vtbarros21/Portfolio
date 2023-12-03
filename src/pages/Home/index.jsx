@@ -96,12 +96,63 @@ const Home = () => {
             </div>
           </div>
           <figure>
-            <img src={Avatar} alt="Avatar" className={s.personagem}/>
+            <img src={Avatar} alt="Avatar" className={s.personagem} />
           </figure>
         </figure>
       </section>
       <section>
-        <h2>Projetos</h2>
+        <div className={s.thirdySection}>
+          <h2>Projetos</h2>
+          <div className={s.alignCard}>
+            <div className={s.backgroundGradient}>
+              <div className={s.backgroundBlack}>
+                <div className={s.backgroundProject}></div>
+                <div className={s.alignText}>
+                  <h4>Titulo do projeto</h4>
+                  <p>Tecnologias: HTML, CSS e JS.</p>
+                </div>
+              </div>
+            </div>
+            <div className={s.backgroundGradient}>
+              <div className={s.backgroundBlack}>
+                <div className={s.backgroundProject}></div>
+                <div className={s.alignText}>
+                  <h4>Titulo do projeto</h4>
+                  <p>Tecnologias: HTML, CSS e JS.</p>
+                </div>
+              </div>
+            </div>
+            <div className={s.backgroundGradient}>
+              <div className={s.backgroundBlack}>
+                <div className={s.backgroundProject}></div>
+                <div className={s.alignText}>
+                  <h4>Titulo do projeto</h4>
+                  <p>Tecnologias: HTML, CSS e JS.</p>
+                </div>
+              </div>
+            </div>
+            <div className={s.backgroundGradient}>
+              <div className={s.backgroundBlack}>
+                <div className={s.backgroundProject}></div>
+                <div className={s.alignText}>
+                  <h4>Titulo do projeto</h4>
+                  <p>Tecnologias: HTML, CSS e JS.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={s.allignButton}>
+          <input type="button" value="Ver Mais" className={s.verMais} />
+        </div>
+      </section>
+      <section>
+        <div>
+          <h2>Serviços</h2>
+          <div>
+            
+          </div>
+        </div>
       </section>
     </>
   );

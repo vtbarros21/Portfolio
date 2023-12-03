@@ -120,17 +120,16 @@
 .circleGradient
     @include mixin.circleGradient
 
-
 .circle
     @include mixin.circleBg
     transition: 0.5s ease-in-out
     img
         transition: 0.5s ease-in-out
 
-
 .circle:hover
     background-color: transparent
     transition: 0.5s ease-in-out
+    transform: rotate(360deg)
     img
         filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(128deg) brightness(210%) contrast(95%)
         transition: 0.5s ease-in-out
@@ -145,3 +144,68 @@
     width: 50.25rem
     height: 50.25rem
     margin-right: 8rem
+
+.thirdySection
+    display: flex
+    justify-content: center
+    flex-direction: column
+    align-items: center
+    margin-top: 4.5rem
+    h2
+        color: variables.$text-color
+        font-weight: 700
+        font-size: 2rem
+
+.alignCard
+    display: flex
+    justify-content: center
+    gap: 2.81rem
+    margin-top: 2.06rem
+
+.backgroundGradient
+    @include mixin.backgroundGradient
+    display: flex
+    justify-content: center
+    h4
+        color: variables.$text-color
+        font-size: 1.125rem
+        font-weight: 500
+    p
+        color: #828282
+        font-size: 0.875rem
+        font-weight: 400
+
+.backgroundBlack
+    @include mixin.backgroundBlack
+    padding-left: 1.56rem
+    padding-top: 1.25rem
+
+.backgroundProject
+    @include mixin.backgroundProject
+
+.alignText
+    margin-top: 0.80rem
+    height: 3.5rem
+    width: 15rem
+    display: flex
+    justify-content: space-around
+    flex-direction: column
+
+.verMais
+    @include mixin.btn2
+    background: none
+    color: variables.$text-color
+    cursor: pointer
+    margin-top: 2rem
+    transition: 0.5s ease-in-out
+
+.verMais:hover
+    background: variables.$text-color-secondary
+    transition: 0.5s ease-in-out
+    border: none
+    transform: scale(1.02)
+
+.allignButton
+    display: flex
+    justify-content: end
+    padding-right: 9.44rem
