@@ -20,6 +20,9 @@
     bottom: -245px
     transition: 0.5s
 
+    @include mixin.breakpoint(laptopI)
+        display: none
+
     @include mixin.breakpoint(laptopS)
         display: none
         transition: 0.5s
@@ -44,6 +47,9 @@
     @include mixin.breakpoint(mobileL)
         display: flex
         width: 100rem
+    
+    @include mixin.breakpoint(laptopI)
+        width: 380rem
 
 .title
     width: 17.5rem
@@ -125,12 +131,11 @@
     display: flex
     justify-content: center
     align-items: center
-    @include mixin.breakpoint(tablet)
 
 .mainGradient
     background: linear-gradient(360deg, rgba(29,181,126,1) 0%, rgba(85,26,210,1) 100%)
     border-radius: 1.8rem
-    width: 90.25rem
+    width: 90vw
     height: 40.375rem
     display: flex
     justify-content: center
@@ -138,23 +143,23 @@
     margin-bottom: 4.5rem
 
     @include mixin.breakpoint(tablet)
-        background-size: contain
-        background-repeat: no-repeat
-        background-size: contain
-        width: 40.4rem
+        width: 40vw
         height: 40.1rem
 
+    @include mixin.breakpoint(laptopS)
+        width: 60vw
+
     @include mixin.breakpoint(laptopM)
-        width: 78.4rem
+        width: 78vw
         height: 40.2rem
 
     @include mixin.breakpoint(laptopL)
-        width: 84rem
+        width: 84vw
 
 .mainBackground
     background-color: #101010
     border-radius: 1.8rem
-    width: 90rem
+    width: 90vw
     height: 39.975rem
     display: flex
     justify-content: center
@@ -162,15 +167,15 @@
     transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(tablet)
-        width: 40rem
+        width: 40vw
         transition: 0.5s ease-in-out
-    
+
     @include mixin.breakpoint(laptopM)
-        width: 78rem
+        width: 78vw
         transition: 0.5s ease-in-out
     
     @include mixin.breakpoint(laptopL)
-        width: 83.6rem
+        width: 83.6vw
         transition: 0.5s ease-in-out
 
 .containDescription
@@ -280,21 +285,23 @@
     transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(laptopS)
-        width: 25.25rem
-        height: 25.25rem
-        margin-bottom: 30rem
+        width: 25.25vw
+        height: 25.25vw
         transition: 0.5s ease-in-out
-        margin-right: 19rem
         position: relative
         z-index: 0
+        display: none
+
+    @include mixin.breakpoint(laptopI)
+        display: none
 
     @include mixin.breakpoint(laptopM)
-        width: 30rem
-        height: 30rem
+        width: 30vw
+        height: 30vw
 
     @include mixin.breakpoint(laptopL)
-        width: 40rem
-        height: 40rem
+        width: 40vw
+        height: 40vw
 
     @include mixin.breakpoint(tablet)
         display: none
@@ -323,17 +330,25 @@
     justify-content: center
     gap: 2.81rem
     margin-top: 2.06rem
+    flex-wrap: wrap
+    transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(tablet)
         flex-wrap: wrap
+        transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(laptopM)
         display: flex
         flex-wrap: wrap
-        width: 55rem
+        transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(laptopL)
         flex-wrap: wrap
+        transition: 0.5s ease-in-out
+    
+    @include mixin.breakpoint(laptopS)
+        flex-wrap: wrap
+        transition: 0.5s ease-in-out
 
 .backgroundGradient
     @include mixin.backgroundGradient
