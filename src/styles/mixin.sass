@@ -52,19 +52,31 @@
     background: #171717
     border: 1px solid #333
 
-@mixi breakepoint($name) {
-    @if $name == "small" {
-        @media (max-width: 767px) {
-            @content;}
-            
-    }
-}
-    @else if $name == "medium"{
-        @media (max-width: 1024px) {
-            @content;}
-    }
+@mixin breakpoint($name)
+    @if $name == "mobileS"
+        @media (max-width: 320px)
+            @content
+
+    @else if $name == "mobileM"
+        @media (max-width: 375px)
+            @content
+
+    @else if $name == "mobileL"
+        @media (max-width: 450px)
+            @content
     
-    @else if $name == "large" {
-        @media (min-width: 1025px) {
-            @content;}
-    }
+    @else if $name == "tablet"
+        @media (max-width: 768px)
+            @content
+    
+    @else if $name == "laptopS"
+        @media (max-width: 1024px)
+            @content
+
+    @else if $name == "laptopM"
+        @media (max-width: 1366px)
+            @content
+
+    @else if $name == "laptopL"
+        @media (max-width: 1440px)
+            @content

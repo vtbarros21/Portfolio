@@ -16,7 +16,7 @@ import Smartphone from "../../assets/smartphone.svg";
 import Next from "../../assets/next.png";
 import Bootstrap from "../../assets/bootstrap.png";
 import Javascript from "../../assets/javascript.svg";
-import Nail from "../../assets/styledcomponents.png"
+import Nail from "../../assets/styledcomponents.png";
 import Reacao from "../../assets/react.svg";
 import Sass from "../../assets/sass.png";
 
@@ -26,7 +26,7 @@ const Home = () => {
       <section className={s.firstSection}>
         <div className={s.firstDiv}>
           <figure>
-            <img src={Victor} alt="Victor Martiliano" />
+            <img src={Victor} alt="Victor Martiliano" className={s.picture} />
           </figure>
         </div>
         <div className={s.allignContent}>
@@ -38,7 +38,7 @@ const Home = () => {
               Victor <strong className={s.strong}>ツ</strong> Martiliano
             </h1>
             <p className={s.subtitle}>Desenvolvedor Front-End & UI Designer</p>
-            <div>
+            <div className={s.allignBtn}>
               <a href="/Victor.pdf" download={true} target="_blank">
                 <input type="button" value="Downlod CV" className={s.btn} />
               </a>
@@ -54,70 +54,75 @@ const Home = () => {
         </div>
       </section>
       <section className={s.secondSection}>
-        <figure className={s.cardMain}>
-          <div className={s.containDescription}>
-            <div className={s.description}>
-              <h2>Sobre mim</h2>
-              <p>
-                <img src={Line2} alt="line" />
-                Olá, sou Victor Martiliano, programador front-end e UI/UX
-                Designer. Minha paixão reside na criação de experiências
-                digitais excepcionais. Especializado em React, HTML, CSS e
-                JavaScript, busco constantemente aprimorar minhas habilidades.
-                Meu playground criativo inclui o Figma, onde dou vida às minhas
-                ideias e me dedico à prototipação. Além dos meus conhecimentos
-                atuais, estou imerso no estudo de outras linguagens relacionadas
-                ao Front-End, buscando sempre evoluir.
-              </p>
-              <div className={s.alignCircle}>
-                <div className={s.circleGradient}>
-                  <a
-                    href="mailto:victorhugo21.contato@gmail.com"
-                    target="_blank"
-                  >
-                    <div className={s.circle}>
-                      <img src={Mail} alt="email" />
-                    </div>
-                  </a>
-                </div>
-                <div className={s.circleGradient}>
-                  <a href="https://www.instagram.com/ofc_vete/" target="_blank">
-                    <div className={s.circle}>
-                      <img src={Instagram} alt="instagram" />
-                    </div>
-                  </a>
-                </div>
-                <div className={s.circleGradient}>
-                  <a href="https://w.app/7w502B" target="_blank">
-                    <div className={s.circle}>
-                      <img src={Phone} alt="telefone" />
-                    </div>
-                  </a>
-                </div>
-                <div className={s.circleGradient}>
-                  <a href="https://github.com/vtbarros21" target="_blank">
-                    <div className={s.circle}>
-                      <img src={Github} alt="Github" />
-                    </div>
-                  </a>
-                </div>
-                <div className={s.circleGradient}>
-                  <a
-                    href="https://www.linkedin.com/in/victor-martiliano/"
-                    target="_blank"
-                  >
-                    <div className={s.circle}>
-                      <img src={Linkedin} alt="email" />
-                    </div>
-                  </a>
+        <div className={s.mainGradient}>
+          <div className={s.mainBackground}>
+            <div className={s.containDescription}>
+              <div className={s.description}>
+                <h2>Sobre mim</h2>
+                <p>
+                  <img src={Line2} alt="line" />
+                  Olá, sou Victor Martiliano, programador front-end e UI/UX
+                  Designer. Minha paixão reside na criação de experiências
+                  digitais excepcionais. Especializado em React, HTML, CSS e
+                  JavaScript, busco constantemente aprimorar minhas habilidades.
+                  Meu playground criativo inclui o Figma, onde dou vida às
+                  minhas ideias e me dedico à prototipação. Além dos meus
+                  conhecimentos atuais, estou imerso no estudo de outras
+                  linguagens relacionadas ao Front-End, buscando sempre evoluir.
+                </p>
+                <div className={s.alignCircle}>
+                  <div className={s.circleGradient}>
+                    <a
+                      href="mailto:victorhugo21.contato@gmail.com"
+                      target="_blank"
+                    >
+                      <div className={s.circle}>
+                        <img src={Mail} alt="email" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className={s.circleGradient}>
+                    <a
+                      href="https://www.instagram.com/ofc_vete/"
+                      target="_blank"
+                    >
+                      <div className={s.circle}>
+                        <img src={Instagram} alt="instagram" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className={s.circleGradient}>
+                    <a href="https://w.app/7w502B" target="_blank">
+                      <div className={s.circle}>
+                        <img src={Phone} alt="telefone" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className={s.circleGradient}>
+                    <a href="https://github.com/vtbarros21" target="_blank">
+                      <div className={s.circle}>
+                        <img src={Github} alt="Github" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className={s.circleGradient}>
+                    <a
+                      href="https://www.linkedin.com/in/victor-martiliano/"
+                      target="_blank"
+                    >
+                      <div className={s.circle}>
+                        <img src={Linkedin} alt="email" />
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
+            <figure>
+              <img src={Avatar} alt="Avatar" className={s.personagem} />
+            </figure>
           </div>
-          <figure>
-            <img src={Avatar} alt="Avatar" className={s.personagem} />
-          </figure>
-        </figure>
+        </div>
       </section>
       <section>
         <div className={s.thirdySection}>
@@ -200,7 +205,7 @@ const Home = () => {
         <div className={s.fifithSection}>
           <h2>Skills</h2>
           <div className={s.alignSkills}>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>
@@ -209,7 +214,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>
@@ -218,7 +223,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>
@@ -227,7 +232,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>
@@ -236,7 +241,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>
@@ -245,7 +250,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className={s.alignCard}>
+            <div className={s.alignService}>
               <div className={s.backgroundgradientIcon}>
                 <div className={s.backgroundIcons}>
                   <figure>

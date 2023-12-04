@@ -1,4 +1,5 @@
 @use '../../styles/variables'
+@use '../../styles/mixin'
 
 .header
     height: 10rem
@@ -13,6 +14,8 @@
     gap: 2rem
     height: 100%
     list-style: none
+    @include mixin.breakpoint(mobileL)
+        gap: 1rem
 
 .li
     color: variables.$text-color
@@ -26,7 +29,6 @@
 .li:hover
     color: variables.$text-color-secondary
     transition: 0.3s
-    
 
 .li:after
     content: ""
@@ -41,7 +43,20 @@
 .li:hover:after
     width: 100%
 
-
 .logo
+    width: 8.5rem
+    transition: 0.5s ease-in-out
+
+    @include mixin.breakpoint(laptopS)
     width: 7.5rem
-    height: 5.88rem
+    margin-right: 2.7rem
+    transition: 0.5s ease-in-out
+
+    @include mixin.breakpoint(laptopM)
+    width: 6.5rem
+    transition: 0.5s ease-in-out
+
+    @include mixin.breakpoint(mobileL)
+        width: 5.5rem 
+        transition: 0.5s ease-in-out
+        margin-right: 2.7rem
