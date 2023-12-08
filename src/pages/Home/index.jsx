@@ -1,6 +1,8 @@
 import React from "react";
 import s from "../Home/styles.module.sass";
 
+
+
 import Victor from "../../assets/Victor.png";
 import Line from "../../assets/line1.png";
 import Avatar from "../../assets/Avatar.png";
@@ -20,10 +22,10 @@ import Nail from "../../assets/styledcomponents.png";
 import Reacao from "../../assets/react.svg";
 import Sass from "../../assets/sass.png";
 
-const Home = () => {
+const Home = () => {  
   return (
     <>
-      <section className={s.firstSection}>
+      <section className={s.Inicio}>
         <div className={s.firstDiv}>
           <figure>
             <img src={Victor} alt="Victor Martiliano" className={s.picture} />
@@ -53,7 +55,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={s.secondSection}>
+      <section className={s.SobreMim}>
         <div className={s.mainGradient}>
           <div className={s.mainBackground}>
             <div className={s.containDescription}>
@@ -124,7 +126,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={s.Projetos}>
         <div className={s.thirdySection}>
           <h2>Projetos</h2>
           <div className={s.alignCard}>
@@ -170,7 +172,7 @@ const Home = () => {
           <input type="button" value="Ver Mais" className={s.verMais} />
         </div>
       </section>
-      <section>
+      <section className={s.Serviços}>
         <div className={s.quarterSection}>
           <h2>Serviços</h2>
           <div className={s.alignCard}>
@@ -201,7 +203,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={s.Skills}>
         <div className={s.fifithSection}>
           <h2>Skills</h2>
           <div className={s.alignSkills}>

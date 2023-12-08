@@ -1,14 +1,17 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
 import s from "./style.module.sass";
+import Sidebar from "../sidebar/sidebar";
 
 const Header = () => {
+
   return (
     <header className={s.header}>
       <figure>
         <img src={Logo} alt="logo marca" className={s.logo} />
       </figure>
       <nav>
+        <Sidebar />
         <ul className={s.ul}>
           <li>
             <a href="#" className={s.li}>
