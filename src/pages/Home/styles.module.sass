@@ -47,7 +47,7 @@
     @include mixin.breakpoint(mobileL)
         display: flex
         width: 100rem
-    
+
     @include mixin.breakpoint(laptopI)
         width: 380rem
 
@@ -79,17 +79,18 @@
     transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(mobileL)
-        height: 17rem
+        height: 18rem
         transition: 0.5s ease-in-out
+        p
+            width: 15rem
 
 .spline
     padding-top: 20px
     transition: 0.5s ease-in-out
 
+.LinhaColorida
     @include mixin.breakpoint(mobileL)
-        padding-top: 0px
-        width: 0.15rem
-        transition: 0.5s ease-in-out
+        display: none
 
 .allignBtn
     transition: 0.5s ease-in-out
@@ -132,7 +133,6 @@
     justify-content: center
     align-items: center
 
-
 .mainGradient
     background: linear-gradient(360deg, rgba(29,181,126,1) 0%, rgba(85,26,210,1) 100%)
     border-radius: 1.8rem
@@ -174,7 +174,7 @@
     @include mixin.breakpoint(laptopM)
         width: 78vw
         transition: 0.5s ease-in-out
-    
+
     @include mixin.breakpoint(laptopL)
         width: 83.6vw
         transition: 0.5s ease-in-out
@@ -220,11 +220,10 @@
         color: #c3c3c3
         gap: 1.6rem
         margin-top: 1.81rem
-        img
-            @include mixin.breakpoint(tablet)
-                height: 15.5rem
-                width: 1rem
-                padding-top: 3px
+
+        @include mixin.breakpoint(mobileL)
+            border: 2px solid red
+        
 
         @include mixin.breakpoint(laptopS)
             width: 33rem
@@ -233,6 +232,7 @@
         @include mixin.breakpoint(tablet)
             width: 36rem
             font-size: 1.2rem
+            margin-top: 1.40rem
             display: flex
             justify-content: center
             align-items: center
@@ -328,8 +328,6 @@
         @include mixin.breakpoint(tablet)
             font-size: 1.7rem
 
-
-
 .alignCard
     display: flex
     justify-content: center
@@ -350,7 +348,7 @@
     @include mixin.breakpoint(laptopL)
         flex-wrap: wrap
         transition: 0.5s ease-in-out
-    
+
     @include mixin.breakpoint(laptopS)
         flex-wrap: wrap
         transition: 0.5s ease-in-out
@@ -428,7 +426,6 @@
         padding-top: 2.5rem
         width: 8.187rem
 
-
 .quarterSection
     display: flex
     justify-content: center
@@ -448,7 +445,7 @@
     justify-content: center
     gap: 2.81rem
     margin-top: 2.06rem
-    
+
     @include mixin.breakpoint(laptopM)
         flex-wrap: wrap
 
@@ -462,7 +459,7 @@
         color: variables.$text-color
         font-weight: 700
         font-size: 2rem
-        
+
         @include mixin.breakpoint(tablet)
             font-size: 1.7rem
 
@@ -496,7 +493,7 @@
         flex-wrap: wrap
         justify-content: center
         transition: 0.5s ease-in-out
-    
+
     @include mixin.breakpoint(laptopM)
         flex-wrap: wrap
         max-width: 80rem

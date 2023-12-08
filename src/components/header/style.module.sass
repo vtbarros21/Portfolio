@@ -8,10 +8,13 @@
     justify-content: space-between
     align-items: center
     position: relative
-    nav
-
-
-
+    transition: 0.5s ease-in-out
+    
+    @include mixin.breakpoint(tablet)
+        display: flex
+        align-items: center
+        justify-content: center
+        transition: 0.5s ease-in-out
 
 .menu
     display: none
@@ -28,40 +31,6 @@
     height: 3px
     background: #fff
     margin-top: 5px
-
-.ul
-    display: flex
-    align-items: center
-    gap: 2rem
-    height: 100%
-    list-style: none
-
-
-.li
-    color: variables.$text-color
-    font-size: 1.125rem
-    font-weight: 400
-    line-height: normal
-    text-decoration: none
-    cursor: pointer
-    position: relative
-
-.li:hover
-    color: variables.$text-color-secondary
-    transition: 0.3s
-
-.li:after
-    content: ""
-    position: absolute
-    background-color: variables.$text-color-secondary
-    height: 3px
-    width: 0%
-    left: 0
-    bottom: -5px
-    transition: 0.3s
-
-.li:hover:after
-    width: 100%
 
 .logo
     width: 8.5rem

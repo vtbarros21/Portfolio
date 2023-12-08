@@ -62,7 +62,7 @@ const Home = () => {
               <div className={s.description}>
                 <h2>Sobre mim</h2>
                 <p>
-                  <img src={Line2} alt="line" />
+                  <img src={Line2} alt="line" className={s.LinhaColorida}/>
                   Olá, sou Victor Martiliano, programador front-end e UI/UX
                   Designer. Minha paixão reside na criação de experiências
                   digitais excepcionais. Especializado em React, HTML, CSS e
