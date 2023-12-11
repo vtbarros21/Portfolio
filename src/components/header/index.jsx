@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../../assets/logo.png";
 import s from "./style.module.sass";
-import Sidebar from "../sidebar/sidebar";
+import Sidebar from "../sidebar/Sidebar";
 import NavbarDesktop from "../navbar/NavbarDesktop";
 
 const Header = () => {
