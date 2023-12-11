@@ -1,9 +1,10 @@
-import React from "react";
-import Header from "../../components/header";
+import React from 'react'
 
 const index = () => {
   return (
-    <Header />
+    <>
+
+    </>
   )
 }
 

@@ -1,7 +1,6 @@
 import React from "react";
-import s from "../Home/styles.module.sass";
-
-
+import s from "./styles.module.sass";
+import { Link } from "react-router-dom";
 
 import Victor from "../../assets/Victor.png";
 import Line from "../../assets/line1.png";
@@ -22,10 +21,10 @@ import Nail from "../../assets/styledcomponents.png";
 import Reacao from "../../assets/react.svg";
 import Sass from "../../assets/sass.png";
 
-const Home = () => {  
+const Home = () => {
   return (
     <>
-      <section className={s.Inicio}>
+      <section id="#inicio" className={s.Inicio}>
         <div className={s.firstDiv}>
           <figure>
             <img src={Victor} alt="Victor Martiliano" className={s.picture} />
@@ -44,7 +43,10 @@ const Home = () => {
               <a href="/Victor.pdf" download={true} target="_blank">
                 <input type="button" value="Downlod CV" className={s.btn} />
               </a>
-              <a href="https://w.app/7w502B" target="_blank">
+              <a
+                href="https://api.whatsapp.com/send?phone=5521979900407"
+                target="_blank"
+              >
                 <input
                   type="button"
                   value="Entrar em contato"
@@ -55,14 +57,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={s.SobreMim}>
+      <section id="sobre" className={s.SobreMim}>
         <div className={s.mainGradient}>
           <div className={s.mainBackground}>
             <div className={s.containDescription}>
               <div className={s.description}>
                 <h2>Sobre mim</h2>
                 <p>
-                  <img src={Line2} alt="line" className={s.LinhaColorida}/>
+                  <img src={Line2} alt="line" className={s.LinhaColorida} />
                   Olá, sou Victor Martiliano, programador front-end e UI/UX
                   Designer. Minha paixão reside na criação de experiências
                   digitais excepcionais. Especializado em React, HTML, CSS e
@@ -94,7 +96,10 @@ const Home = () => {
                     </a>
                   </div>
                   <div className={s.circleGradient}>
-                    <a href="https://w.app/7w502B" target="_blank">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5521979900407"
+                      target="_blank"
+                    >
                       <div className={s.circle}>
                         <img src={Phone} alt="telefone" />
                       </div>
@@ -126,7 +131,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={s.Projetos}>
+      <section id="projetos" className={s.Projetos}>
         <div className={s.thirdySection}>
           <h2>Projetos</h2>
           <div className={s.alignCard}>
@@ -169,10 +174,12 @@ const Home = () => {
           </div>
         </div>
         <div className={s.allignButton}>
-          <input type="button" value="Ver Mais" className={s.verMais} />
+          <Link to="/Projects">
+            <input type="button" value="Ver Mais" className={s.verMais} />
+          </Link>
         </div>
       </section>
-      <section className={s.Serviços}>
+      <section id="serviços" className={s.Serviços}>
         <div className={s.quarterSection}>
           <h2>Serviços</h2>
           <div className={s.alignCard}>
@@ -203,7 +210,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className={s.Skills}>
+      <section id="skills" className={s.Skills}>
         <div className={s.fifithSection}>
           <h2>Skills</h2>
           <div className={s.alignSkills}>
