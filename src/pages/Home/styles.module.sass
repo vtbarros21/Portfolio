@@ -4,6 +4,8 @@
 .Inicio
     display: flex
     align-items: center
+    @include mixin.breakpoint(mobileL)
+        justify-content: flex-start
 
 .firstDiv
     display: flex
@@ -51,6 +53,9 @@
     @include mixin.breakpoint(laptopI)
         width: 380rem
 
+    @include mixin.breakpoint(mobileL)
+    margin-right: 2.5rem
+
 .title
     width: 17.5rem
     font-size: 2.25rem
@@ -79,16 +84,24 @@
     transition: 0.5s ease-in-out
 
     @include mixin.breakpoint(mobileL)
+        display: flex
+        justify-content: center
+        align-items: center
         height: 18rem
         transition: 0.5s ease-in-out
         p
             width: 15rem
+            display: flex
+            justify-content: center
+            align-items: center
+            text-align: center
+        h1
+            text-align: center
 
 .spline
     padding-top: 20px
     transition: 0.5s ease-in-out
 
-.LinhaColorida
     @include mixin.breakpoint(mobileL)
         display: none
 
@@ -157,6 +170,9 @@
     @include mixin.breakpoint(laptopL)
         width: 84vw
 
+    @include mixin.breakpoint(mobileM)
+        width: 170vw
+
 .mainBackground
     background-color: #101010
     border-radius: 1.8rem
@@ -179,6 +195,9 @@
         width: 83.6vw
         transition: 0.5s ease-in-out
 
+    @include mixin.breakpoint(mobileM)
+        width: 99vw
+
 .containDescription
     transition: 0.5s ease-in-out
 
@@ -192,8 +211,6 @@
 
     @include mixin.breakpoint(laptopM)
         transition: 0.5s ease-in-out
-
-    @include mixin.breakpoint(laptopL)
 
     h2
         color: variables.$text-color
@@ -221,10 +238,6 @@
         gap: 1.6rem
         margin-top: 1.81rem
 
-        @include mixin.breakpoint(mobileL)
-            border: 2px solid red
-        
-
         @include mixin.breakpoint(laptopS)
             width: 33rem
             font-size: 1rem
@@ -240,6 +253,15 @@
         @include mixin.breakpoint(mobileL)
             font-size: 1rem
             width: 21.5rem
+
+        @include mixin.breakpoint(mobileM)
+            font-size: 0.8rem
+            width: 20rem
+            text-align: center
+            justify-content: center
+
+        @include mixin.breakpoint(mobileS)
+            width: 19rem
 
 .circleGradient
     @include mixin.circleGradient
@@ -275,6 +297,7 @@
     gap: 2.5rem
     display: flex
     justify-content: center
+    flex-wrap: wrap
 
     @include mixin.breakpoint(laptopS)
         padding: 0.5rem
@@ -313,6 +336,11 @@
 
 .description
     @include mixin.breakpoint(tablet)
+    @include mixin.breakpoint(mobileS)
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
 
 .thirdySection
     display: flex
@@ -366,13 +394,26 @@
         font-size: 0.875rem
         font-weight: 400
 
+    @include mixin.breakpoint(mobileM)
+        width: 22.9rem
+    @include mixin.breakpoint(mobileS)
+        width: 20rem
+
 .backgroundBlack
     @include mixin.backgroundBlack
     padding-left: 1.56rem
     padding-top: 1.25rem
+    @include mixin.breakpoint(mobileM)
+        width: 22.7rem
+    @include mixin.breakpoint(mobileS)
+        width: 19.8rem
 
 .backgroundProject
     @include mixin.backgroundProject
+    @include mixin.breakpoint(mobileM)
+        width: 18rem
+    @include mixin.breakpoint(mobileS)
+        width: 15rem
 
 .alignText
     margin-top: 0.80rem
@@ -411,6 +452,10 @@
     border-radius: 0.625rem 0.625rem 0rem 0rem
     display: flex
     justify-content: center
+    @include mixin.breakpoint(mobileM)
+        width: 22rem
+    @include mixin.breakpoint(mobileS)
+        width: 19.9rem
 
 .blackCard
     @include mixin.backgroundBlack
@@ -425,6 +470,11 @@
         font-weight: 500
         padding-top: 2.5rem
         width: 8.187rem
+
+    @include mixin.breakpoint(mobileM)
+        width: 21.8rem
+    @include mixin.breakpoint(mobileS)
+        width: 19.6rem
 
 .quarterSection
     display: flex
